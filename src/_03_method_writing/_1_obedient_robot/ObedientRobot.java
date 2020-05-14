@@ -4,8 +4,11 @@ import javax.swing.JOptionPane;
 
 import org.jointheleague.graphical.robot.Robot;
 
-public class robot {
+public class ObedientRobot {
 		Robot notarobot = new Robot();
+		public static void main(String[] args) {
+			new ObedientRobot().ask();
+		}
 void ask() {
 
 	notarobot.setSpeed(500);
@@ -33,7 +36,13 @@ void square() {
 	}
 }
 void triangle() {
-	
+	notarobot.turn(30);
+	notarobot.move(50);
+	notarobot.turn(120);
+	notarobot.move(50);
+	notarobot.turn(120);
+	notarobot.move(50);
+
 }
 }
 
